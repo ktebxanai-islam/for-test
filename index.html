@@ -550,7 +550,7 @@ margin:-12px 0 0 -100px;
 
 <div id="yak" style="display:none;">
 <div class="decator">
-<button onclick="bacc()">Back</button>
+<button onclick="saroke()">Back</button>
 </div>
 
 
@@ -561,7 +561,7 @@ margin:-12px 0 0 -100px;
 </div>
 <div id="du" style="display:none;">
     <div class="decator">
-<button onclick="bacc()">Back</button>
+<button onclick="saroke()">Back</button>
 </div>
     
     
@@ -570,7 +570,7 @@ margin:-12px 0 0 -100px;
 </div>
 <div id="se" style="display:none;">
     <div class="decator">
-<button onclick="bacc()">Back</button>
+<button onclick="saroke()">Back</button>
 </div>
     
     
@@ -580,7 +580,7 @@ margin:-12px 0 0 -100px;
 <div id="chuar" style="display:none;">
   
     <div class="decator">
-<button onclick="bacc()">Back</button>
+<button onclick="saroke()">Back</button>
 </div>
     
 
@@ -594,61 +594,43 @@ margin:-12px 0 0 -100px;
     <script>
     
 
-    
+    function saroke() {
+document.getElementById("first").style.display="block";
+document.getElementById("yak").style.display="none";
+document.getElementById("du").style.display="none";
+document.getElementById("se").style.display="none";
+document.getElementById("chuar").style.display="none";
+    }
     function kteb() {
-        document.getElementById("first").style.display="none";
-        document.getElementById("yak").style.display="block";
-
+document.getElementById("first").style.display="none";
+document.getElementById("yak").style.display="block";
 document.getElementById("du").style.display="none";
-
 document.getElementById("se").style.display="none";
-
 document.getElementById("chuar").style.display="none";
-
-
     }
-    
-    
-    
     function aqeda() {
-        document.getElementById("first").style.display="none";
-        document.getElementById("du").style.display="block";
-
+document.getElementById("first").style.display="none";
+document.getElementById("du").style.display="block";
 document.getElementById("yak").style.display="none";
-
 document.getElementById("se").style.display="none";
-
-document.getElementById("chuar").style.display="none";
-
-        
-    }
-    
-    
+document.getElementById("chuar").style.display="none";     
+    }   
     function salaf() {
-        document.getElementById("first").style.display="none";
-        document.getElementById("se").style.display="block";
-
+document.getElementById("first").style.display="none";
+document.getElementById("se").style.display="block";
 document.getElementById("yak").style.display="none";
-
 document.getElementById("du").style.display="none";
-
 document.getElementById("chuar").style.display="none";
-
-    }
-    
-    
+    } 
     function qyamat() {
-        document.getElementById("first").style.display="none";
-        document.getElementById("chuar").style.display="block";
-        
-
+document.getElementById("first").style.display="none";
+document.getElementById("chuar").style.display="block";
 document.getElementById("yak").style.display="none";
-
 document.getElementById("du").style.display="none";
-
 document.getElementById("se").style.display="none";
-
     }
+
+	    
       document.addEventListener('DOMContentLoaded', function() {
             const navbarToggle = document.querySelector('.navbar-toggle');
             const navbarLinks = document.querySelector('.navbar-links');
